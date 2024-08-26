@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resistor Color Bands</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js"></script>
+</head>
+<body>
+  <div class="title-text-wrapper">
+    <p id="title-text">
+      Antony<br>Electronics
+    </p>
+  </div>
+  <div class="app-container">
+    <div id="container-header">
+      <h1><span id="app-name">Resistor Value Finder</span></h1>
+    </div>
+
+    <div id="row1" class="rows row-1">
+      <div class="labels">
+        <label for="">No.Of.Band</label>
+      </div>
+      <div class="values-wrapper">
+        <select class="option-values" name="resistorBands" id="resistorBands" onchange="controlBands()">
+          <option value="0" selected="selected">None</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+      </div>
+
+    </div>
+    <div id="row2" class="rows row-2">
+      <div class="labels">
+        <label for="">color 1</label>
+      </div>
+      <div class="values-wrapper">
+        <select class="option-values" name="band1" id="band1">
+          <option value="0">black</option>
+          <option value="1" selected="selected">brown</option>
+          <option value="2">red</option>
+          <option value="3">orange</option>
+          <option value="4">yellow</option>
+          <option value="5">green</option>
+          <option value="6">blue</option>
+          <option value="7">violet</option>
+          <option value="8">grey</option>
+          <option value="9">white</option>
+          <option value="">gold</option>
+          <option value="">silver</option>
+        </select>
+      </div>
+
+    </div>
+    <div id="row3" class="rows row-3">
+      <div class="labels">
+        <label for="">color 2</label>
+      </div>
+      <div class="values-wrapper">
+        <select class="option-values" name="band2" id="band2">
+          <option value="0">black</option>
+          <option value="1">brown</option>
+          <option value="2">red</option>
+          <option value="3">orange</option>
+          <option value="4">yellow</option>
+          <option value="5">green</option>
+          <option value="6">blue</option>
+          <option value="7">violet</option>
+          <option value="8">grey</option>
+          <option value="9">white</option>
+          <option value="">gold</option>
+          <option value="">silver</option>
+        </select>
+      </div>
+
+    </div>
+    <div id="row4" class="rows row-4">
+      <div class="labels">
+        <label for="">color 3</label>
+      </div>
+      <div class="values-wrapper">
+        <select class="option-values" name="band3" id="band3">
+          <option value="0">black</option>
+          <option value="1">brown</option>
+          <option value="2">red</option>
+          <option value="3">orange</option>
+          <option value="4">yellow</option>
+          <option value="5">green</option>
+          <option value="6">blue</option>
+          <option value="7">violet</option>
+          <option value="8">grey</option>
+          <option value="9">white</option>
+          <option value="gold">gold</option>
+          <option value="silver">silver</option>
+        </select>
+      </div>
+    </div>
+    <div id="row5" class="rows row-5">
+      <div class="labels">
+        <label for="">color 4</label>
+      </div>
+      <div class="values-wrapper">
+        <select class="option-values" name="band4" id="band4">
+          <option value="0">black</option>
+          <option value="1">brown</option>
+          <option value="2">red</option>
+          <option value="3">orange</option>
+          <option value="4">yellow</option>
+          <option value="5">green</option>
+          <option value="6">blue</option>
+          <option value="7">violet</option>
+          <option value="8">grey</option>
+          <option value="9">white</option>
+          <option value="gold">gold</option>
+          <option value="silver">silver</option>
+        </select>
+      </div>
+    </div>
+    <div id="row6" class="rows row-6">
+      <div class="labels">
+        <label for="">color 5</label>
+      </div>
+      <div class="values-wrapper">
+        <select class="option-values" name="band5" id="band5">
+          <option value="0">black</option>
+          <option value="1">brown</option>
+          <option value="2">red</option>
+          <option value="3">orange</option>
+          <option value="4">yellow</option>
+          <option value="5">green</option>
+          <option value="6">blue</option>
+          <option value="7">violet</option>
+          <option value="8">grey</option>
+          <option value="9">white</option>
+          <option value="">gold</option>
+          <option value="">silver</option>
+        </select>
+      </div>
+    </div>
+    <div id="row7" class="rows row-7">
+      <div class="labels">
+        <label for="">color 6</label>
+      </div>
+      <div class="values-wrapper">
+        <select class="option-values" name="band6" id="band6">
+          <option value="0">black</option>
+          <option value="1">brown</option>
+          <option value="2">red</option>
+          <option value="3">orange</option>
+          <option value="4">yellow</option>
+          <option value="5">green</option>
+          <option value="6">blue</option>
+          <option value="7">violet</option>
+          <option value="8">grey</option>
+          <option value="9">white</option>
+          <option value="">gold</option>
+          <option value="">silver</option>
+        </select>
+      </div>
+    </div>
+    <div id="row8" class="rows row-8">
+      <div class="labels">
+        <label for="">Output</label>
+      </div>
+      <div class="values-wrapper">
+        <input type="text" name="output" id="output" readonly>
+      </div>
+    </div>
+
+    <div id="row9" class="rows row-9">
+      <input type="submit" id="submit" onclick="myFunction()" value="Find it" />
+  </div>
+
+</div>
+</body>
+</html>
