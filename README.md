@@ -1,6 +1,6 @@
 # Resister-Value-Calculator
 
-[holi_repo]: https://github-readme-stats.vercel.app/api/pin/?username=antonyjued&repo=github-readme-stats&cache_seconds=86400&theme=holi
+[holi_repo]: https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats&cache_seconds=86400&theme=holi
 
 ## Language Used
 
